@@ -2,13 +2,37 @@
     margin-top: 204px;
 
     &__title {
+        position: relative;
         font-weight: 400;
         font-size: 39px;
         line-height: 48px;
         letter-spacing: 1.2px;
         color: #102226;
         margin-bottom: 41px; 
-        width: 400px;   
+        width: 400px;  
+        
+        &::after {
+            position: absolute;
+            content: '';
+            top: -60px; 
+            left: -75px;
+            width: 172px;
+            height: 175px;
+            background-image: url("../images/skills/icon_sun.png");
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            bottom: -238px; 
+            left: -341px;
+            width: 145px;
+            height: 145px;
+            background-image: url("/images/skills/wave.png");
+            background-repeat: no-repeat;
+        }
     }
 
     &__item {

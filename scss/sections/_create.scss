@@ -1,13 +1,37 @@
 .create {
-    margin-top: 115px;
+    margin-top: 115px;    
        
     &__title {
+        position: relative;
         width: 431px;
         font-weight: 400;
         font-size: 48px;
         line-height: 56px;
         letter-spacing: 1.44px;
         color: #102226; 
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: -34px; 
+            left: -45px;
+            width: 124px;
+            height: 126px;
+            background-image: url("../images/create/icon_sun_min.svg");
+            background-repeat: no-repeat;
+            z-index: -1;
+        }    
+        
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0; 
+            right: -676px;
+            width: 185px;
+            height: 185px;
+            background-image: url("../images/create/wave.png");
+            background-repeat: no-repeat;            
+        }
     }
 
     &__items {

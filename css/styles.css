@@ -177,12 +177,34 @@ body {
   margin-top: 115px;
 }
 .create__title {
+  position: relative;
   width: 431px;
   font-weight: 400;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: 1.44px;
   color: #102226;
+}
+.create__title::after {
+  position: absolute;
+  content: "";
+  top: -34px;
+  left: -45px;
+  width: 124px;
+  height: 126px;
+  background-image: url("../images/create/icon_sun_min.svg");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.create__title::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -676px;
+  width: 185px;
+  height: 185px;
+  background-image: url("../images/create/wave.png");
+  background-repeat: no-repeat;
 }
 .create__items {
   display: flex;
@@ -257,6 +279,7 @@ body {
   align-items: center;
 }
 .studies__title {
+  position: relative;
   margin-left: 125px;
   font-weight: 400;
   font-size: 48px;
@@ -264,6 +287,17 @@ body {
   letter-spacing: 1.44px;
   color: #102226;
   width: 504px;
+}
+.studies__title::after {
+  position: absolute;
+  content: "";
+  top: -50px;
+  left: -61px;
+  width: 156px;
+  height: 158px;
+  background-image: url("/images/studies/icon_sun.png");
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 .studies__link {
   position: relative;
@@ -345,6 +379,7 @@ body {
   margin-top: 204px;
 }
 .skills__title {
+  position: relative;
   font-weight: 400;
   font-size: 39px;
   line-height: 48px;
@@ -352,6 +387,27 @@ body {
   color: #102226;
   margin-bottom: 41px;
   width: 400px;
+}
+.skills__title::after {
+  position: absolute;
+  content: "";
+  top: -60px;
+  left: -75px;
+  width: 172px;
+  height: 175px;
+  background-image: url("../images/skills/icon_sun.png");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.skills__title::before {
+  position: absolute;
+  content: "";
+  bottom: -238px;
+  left: -341px;
+  width: 145px;
+  height: 145px;
+  background-image: url("/images/skills/wave.png");
+  background-repeat: no-repeat;
 }
 .skills__item {
   padding-top: 40px;
@@ -381,6 +437,7 @@ body {
   margin-top: 198px;
 }
 .awards__title {
+  position: relative;
   font-weight: 400;
   font-size: 48px;
   line-height: 56px;
@@ -388,6 +445,17 @@ body {
   letter-spacing: 1.44px;
   color: #102226;
   margin-bottom: 84px;
+}
+.awards__title::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 132px;
+  height: 134px;
+  background-image: url("../images/awards/icon_sun.png");
+  z-index: -1;
 }
 .awards__items {
   display: flex;
@@ -448,6 +516,7 @@ body {
   margin-bottom: 143px;
 }
 .quality__title {
+  position: relative;
   width: 400px;
   font-weight: 400;
   font-size: 48px;
@@ -455,6 +524,17 @@ body {
   letter-spacing: 1.44px;
   color: #102226;
   margin-bottom: 63px;
+}
+.quality__title::after {
+  position: absolute;
+  content: "";
+  top: -34px;
+  left: -49px;
+  width: 126px;
+  height: 128px;
+  background-image: url("/images/quality/icon_sun.png");
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 .quality__items {
   display: flex;
@@ -492,13 +572,22 @@ body {
   background-color: #fff;
 }
 
-.banner {
-  background-color: #1C3F3A;
-  padding: 102px 0 118px 100px;
-}
 .banner__items {
+  position: relative;
   display: flex;
   gap: 18px;
+  padding: 102px 0 118px 100px;
+  background-color: #1C3F3A;
+}
+.banner__items::after {
+  position: absolute;
+  content: "";
+  top: -210px;
+  right: -309px;
+  width: 558px;
+  height: 492px;
+  background-image: url("../images/banner/banner_sun.png");
+  background-repeat: no-repeat;
 }
 .banner__item {
   display: flex;
@@ -559,6 +648,7 @@ body {
   margin-bottom: 124px;
 }
 .blog__title {
+  position: relative;
   margin-left: 125px;
   font-weight: 400;
   font-size: 48px;
@@ -566,6 +656,17 @@ body {
   letter-spacing: 1.44px;
   color: #102226;
   width: 336px;
+}
+.blog__title::after {
+  position: absolute;
+  content: "";
+  top: -32px;
+  left: -45px;
+  width: 122px;
+  height: 124px;
+  background-image: url("../images/blog/icon_sun.png");
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 .blog__link {
   position: relative;

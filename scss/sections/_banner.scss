@@ -1,13 +1,26 @@
 .banner {
-    background-color: #1C3F3A;
-    padding: 102px 0 118px 100px;
 
     &__items {
+        position: relative;
         display: flex;
         gap: 18px;
+        padding: 102px 0 118px 100px;
+        background-color: #1C3F3A;
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: -210px;
+            right: -309px;
+            width: 558px;
+            height: 492px;
+            background-image: url("../images/banner/banner_sun.png");
+            background-repeat: no-repeat;    
+        }
     }
 
-    &__item {display: flex;
+    &__item {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         width: 400px;        

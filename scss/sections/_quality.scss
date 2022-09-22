@@ -3,6 +3,7 @@
     margin-bottom: 143px;
 
     &__title {
+        position: relative;
         width: 400px;
         font-weight: 400;
         font-size: 48px;
@@ -10,6 +11,18 @@
         letter-spacing: 1.44px;        
         color: #102226;
         margin-bottom: 63px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: -34px; 
+            left: -49px;
+            width: 126px;
+            height: 128px;
+            background-image: url("/images/quality/icon_sun.png");
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
     }
 
     &__items {

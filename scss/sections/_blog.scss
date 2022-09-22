@@ -10,6 +10,7 @@
     }
 
     &__title {
+        position: relative;
         margin-left: 125px;
         font-weight: 400;
         font-size: 48px;
@@ -17,6 +18,18 @@
         letter-spacing: 1.44px;
         color: #102226;
         width: 336px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: -32px; 
+            left: -45px;
+            width: 122px;
+            height: 124px;
+            background-image: url("../images/blog/icon_sun.png");
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
     }
 
     &__link {
