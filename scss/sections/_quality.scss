@@ -1,0 +1,57 @@
+.quality {
+    margin-top: 158px;
+    margin-bottom: 143px;
+
+    &__title {
+        width: 400px;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: 1.44px;        
+        color: #102226;
+        margin-bottom: 63px;
+    }
+
+    &__items {
+        display: flex;
+        gap: 92px;
+    }
+
+    &__item {
+
+        &__quote {
+            width: 375px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 40px;
+            color: #102226;   
+            margin-top: 69px;  
+            margin-bottom: 91px;   
+        }
+
+        &__text {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 32px;
+            letter-spacing: 0.7px;            
+            color: #102226;        
+        }
+
+        &__subtext {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 24px;
+            letter-spacing: 0.14px;            
+            color: #485B60;
+            padding-bottom: 72px;        
+        }
+
+        &__slider {
+            background-color: #fff;
+        }
+    }
+}

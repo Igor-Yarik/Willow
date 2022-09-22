@@ -1,0 +1,121 @@
+.header {
+    &__top {
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        margin-left: 10px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        &__img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: #ECE8D9;
+            margin-right: 12px; 
+        }
+
+        &__title {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 1px;
+            color: #333333;
+            margin-right: 33px;
+        }
+    }
+
+    &__email {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #485B60;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 61px;
+        margin-right: 110px;
+        margin-left: 110px;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 400px;            
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #485B60;
+            margin-bottom: 11px;
+        }
+
+        &__title {
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 80px;
+            letter-spacing: 2.88px;
+            color: #102226;
+            margin-bottom: 21px;
+        }
+
+        &__subtitle {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 32px;
+            letter-spacing: 0.54px;
+            color: #102226;
+            margin-bottom: 32px;
+        }
+
+        &__btn {
+            position: relative;
+            display: inline-flex;
+            width: 174px;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 13px 59px 13px 33px;
+            background: #26534C;
+            border: 1px solid #EFF1F5;
+            margin-bottom: 100px;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 12px;
+                height: 12px;
+                top: 19px;
+                right: 17px;
+                background: url("/images/header/icon_arrow.svg");
+                background-repeat: no-repeat;
+            }
+        }
+
+        &__copyright {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #485B60;
+        }  
+
+        &__bg {
+            background-color: #ECE8D9;
+        }    
+    }
+}

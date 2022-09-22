@@ -1,0 +1,28 @@
+body {
+    font-family: 'Roboto';
+}
+
+.container {
+    width:calc(1440px - 160px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.create {
+
+    .container {
+        width:calc(1440px - 520px);
+    }
+}
+
+.studies, .quality, .footer__top {
+    .container {
+        width:calc(1440px - 380px);
+    }
+}
+
+.skills {
+    .container {
+        width:calc(1440px - 820px);
+    }
+}

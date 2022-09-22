@@ -1,0 +1,39 @@
+.skills {
+    margin-top: 204px;
+
+    &__title {
+        font-weight: 400;
+        font-size: 39px;
+        line-height: 48px;
+        letter-spacing: 1.2px;
+        color: #102226;
+        margin-bottom: 41px;    
+    }
+
+    &__item {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #DDE3E4;
+
+        &:first-child {
+            border-top: 1px solid #DDE3E4;
+        }
+
+        &__title {
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 32px;
+            letter-spacing: 0.72px;
+            color: #102226;            
+        }
+    
+        &__text {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.32px;
+            color: #485B60;
+        }        
+    }    
+}

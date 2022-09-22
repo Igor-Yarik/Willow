@@ -1,0 +1,74 @@
+.awards {
+    margin-top: 198px;
+
+    &__title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        letter-spacing: 1.44px;
+        color: #102226;
+        margin-bottom: 84px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 290px;
+        padding: 41px 41px 45px 41px;
+        border: 1px solid #DDE3E4;
+
+        &__img {
+            margin-bottom: 32px;
+        }
+
+        &__date {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 2px;
+            color: #485B60;
+            margin-bottom: 9px;
+        }
+
+        &__title {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.72px;
+            color: #102226;            
+        }
+
+        &__link {
+            position: relative;
+            display: inline-flex;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.28px;
+            color: #102226;
+            margin-top: 36px;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 10px;
+                height: 10px;
+                top: 25%;
+                right: -21px;
+                background-image: url("/images/awards/icon_arrow.svg");
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    &__subitem {
+        padding-top: 32px;
+        padding-bottom: 31px;
+        border-top: 1px solid #DDE3E4;
+        border-bottom: 1px solid #DDE3E4;
+    }
+}
