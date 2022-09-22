@@ -136,6 +136,7 @@ body {
   background: #26534C;
   border: 1px solid #EFF1F5;
   margin-bottom: 100px;
+  transition: all 0.3s;
 }
 .header__main__btn::after {
   position: absolute;
@@ -146,6 +147,11 @@ body {
   right: 17px;
   background: url("../images/header/icon_arrow.svg");
   background-repeat: no-repeat;
+}
+.header__main__btn:hover {
+  border: 1px solid #1C3F3A;
+  box-shadow: 0 0 5px 2px #1C3F3A;
+  transition: all 0.3s;
 }
 .header__main__copyright {
   font-weight: 400;
@@ -171,6 +177,11 @@ body {
   align-items: center;
   width: 180px;
   height: 80px;
+  transition: all 0.3s;
+}
+.clients__item:hover {
+  transform: scale(1.7);
+  transition: all 0.3s;
 }
 
 .create {
@@ -295,7 +306,7 @@ body {
   left: -61px;
   width: 156px;
   height: 158px;
-  background-image: url("/images/studies/icon_sun.png");
+  background-image: url("../images/studies/icon_sun.png");
   background-repeat: no-repeat;
   z-index: -1;
 }
@@ -310,6 +321,11 @@ body {
   color: #1C3F3A;
   padding: 9px 43px 9px 25px;
   border: 1px solid #1C3F3A;
+  transition: all 0.3s;
+}
+.studies__link:hover {
+  box-shadow: 0 0 5px 2px #1C3F3A, inset 0 0 5px 2px #1C3F3A;
+  transition: all 0.3s;
 }
 .studies__link::after {
   position: absolute;
@@ -406,7 +422,7 @@ body {
   left: -341px;
   width: 145px;
   height: 145px;
-  background-image: url("/images/skills/wave.png");
+  background-image: url("../images/skills/wave.png");
   background-repeat: no-repeat;
 }
 .skills__item {
@@ -532,7 +548,7 @@ body {
   left: -49px;
   width: 126px;
   height: 128px;
-  background-image: url("/images/quality/icon_sun.png");
+  background-image: url("../images/quality/icon_sun.png");
   background-repeat: no-repeat;
   z-index: -1;
 }
@@ -541,13 +557,34 @@ body {
   gap: 92px;
 }
 .quality__item__quote {
+  position: relative;
   width: 375px;
   font-weight: 400;
   font-size: 24px;
   line-height: 40px;
   color: #102226;
-  margin-top: 69px;
-  margin-bottom: 91px;
+  padding-top: 69px;
+  padding-bottom: 91px;
+}
+.quality__item__quote::before {
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 0;
+  width: 18px;
+  height: 14px;
+  background-image: url("../images/quality/icon_01.svg");
+  background-repeat: no-repeat;
+}
+.quality__item__quote::after {
+  position: absolute;
+  content: "";
+  bottom: 41px;
+  left: 0;
+  width: 18px;
+  height: 14px;
+  background-image: url("../images/quality/icon_02.svg");
+  background-repeat: no-repeat;
 }
 .quality__item__text {
   font-family: "Inter";
@@ -568,8 +605,22 @@ body {
   color: #485B60;
   padding-bottom: 72px;
 }
-.quality__item__slider {
-  background-color: #fff;
+.quality__slider {
+  display: flex;
+  gap: 34px;
+}
+.quality__slider__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #F1F3F3;
+  transition: all 0.4s;
+}
+.quality__slider__item:hover {
+  background-color: #acadad;
+  transition: all 0.4s;
 }
 
 .banner__items {
@@ -625,6 +676,7 @@ body {
   padding: 10px 43px 12px 25px;
   border: 1px solid #F1F3F3;
   width: 161px;
+  transition: all 0.3s;
 }
 .banner__item__link::after {
   position: absolute;
@@ -635,6 +687,10 @@ body {
   right: 15px;
   background: url("../images/header/icon_arrow.svg");
   background-repeat: no-repeat;
+}
+.banner__item__link:hover {
+  box-shadow: 0 0 5px 2px #FFFFFF, inset 0 0 5px 2px #FFFFFF;
+  transition: all 0.3s;
 }
 
 .blog {
@@ -679,6 +735,7 @@ body {
   color: #1C3F3A;
   padding: 8px 43px 10px 25px;
   border: 1px solid #1C3F3A;
+  transition: all 0.3s;
 }
 .blog__link::after {
   position: absolute;
@@ -690,6 +747,10 @@ body {
   background-image: url("../images/create/icon_arrow.svg");
   background-repeat: no-repeat;
 }
+.blog__link:hover {
+  box-shadow: 0 0 5px 2px #1C3F3A, inset 0 0 5px 2px #1C3F3A;
+  transition: all 0.3s;
+}
 .blog__items {
   display: flex;
   justify-content: space-between;
@@ -699,6 +760,11 @@ body {
   width: 400px;
   padding: 0 25px 5px 25px;
   border: 1px solid #DDE3E4;
+  transition: all 0.5s;
+}
+.blog__item:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 .blog__item__img {
   margin-bottom: 24px;

@@ -94,6 +94,7 @@
             background: #26534C;
             border: 1px solid #EFF1F5;
             margin-bottom: 100px;
+            transition: all 0.3s;
 
             &::after {
                 position: absolute;
@@ -104,6 +105,12 @@
                 right: 17px;
                 background: url("../images/header/icon_arrow.svg");
                 background-repeat: no-repeat;
+            }
+
+            &:hover {
+                border: 1px solid #1C3F3A;
+                box-shadow: 0 0 5px 2px #1C3F3A;
+                transition: all 0.3s;
             }
         }
 

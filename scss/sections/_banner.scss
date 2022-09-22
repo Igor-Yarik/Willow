@@ -58,6 +58,7 @@
             padding: 10px 43px 12px 25px;
             border: 1px solid #F1F3F3;
             width: 161px;
+            transition: all 0.3s;
 
             &::after {
                 position: absolute;
@@ -68,6 +69,11 @@
                 right: 15px;
                 background: url("../images/header/icon_arrow.svg");
                 background-repeat: no-repeat;
+            }
+
+            &:hover {
+                box-shadow: 0 0 5px 2px #FFFFFF, inset 0 0 5px 2px #FFFFFF;
+                transition: all 0.3s;
             }
         }
     }

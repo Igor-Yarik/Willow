@@ -19,7 +19,7 @@
             left: -49px;
             width: 126px;
             height: 128px;
-            background-image: url("/images/quality/icon_sun.png");
+            background-image: url("../images/quality/icon_sun.png");
             background-repeat: no-repeat;
             z-index: -1;
         }
@@ -33,13 +33,36 @@
     &__item {
 
         &__quote {
+            position: relative;
             width: 375px;
             font-weight: 400;
             font-size: 24px;
             line-height: 40px;
             color: #102226;   
-            margin-top: 69px;  
-            margin-bottom: 91px;   
+            padding-top: 69px;  
+            padding-bottom: 91px;  
+            
+            &::before {
+                position: absolute;
+                content: '';
+                top: 9px;
+                left: 0;
+                width: 18px;
+                height: 14px;
+                background-image: url("../images/quality/icon_01.svg");
+                background-repeat: no-repeat;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: 41px;
+                left: 0;
+                width: 18px;
+                height: 14px;
+                background-image: url("../images/quality/icon_02.svg");
+                background-repeat: no-repeat;
+            }
         }
 
         &__text {
@@ -61,10 +84,26 @@
             letter-spacing: 0.14px;            
             color: #485B60;
             padding-bottom: 72px;        
-        }
+        }        
+    }
 
-        &__slider {
-            background-color: #fff;
-        }
+    &__slider { 
+        display: flex;
+        gap: 34px;
+        
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: #F1F3F3;
+            transition: all 0.4s;
+
+            &:hover {
+                background-color: #acadad;
+                transition: all 0.4s;
+            }
+        }        
     }
 }

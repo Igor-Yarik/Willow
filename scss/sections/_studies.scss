@@ -24,7 +24,7 @@
             left: -61px;
             width: 156px;
             height: 158px;
-            background-image: url("/images/studies/icon_sun.png");
+            background-image: url("../images/studies/icon_sun.png");
             background-repeat: no-repeat;
             z-index: -1;
         }
@@ -41,6 +41,12 @@
         color: #1C3F3A;
         padding: 9px 43px 9px 25px;
         border: 1px solid #1C3F3A;
+        transition: all 0.3s;
+
+        &:hover {
+            box-shadow: 0 0 5px 2px #1C3F3A, inset 0 0 5px 2px #1C3F3A;
+            transition: all 0.3s;
+        }
 
         &::after {
             position: absolute;
