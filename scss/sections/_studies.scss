@@ -36,7 +36,7 @@
             height: 10px;
             top: 16px;
             right: 16px;
-            background-image: url("/images/create/icon_arrow.svg");
+            background-image: url("../images/create/icon_arrow.svg");
             background-repeat: no-repeat;
         }
     }
@@ -87,19 +87,19 @@
         }
 
         &:nth-child(1) {
-            background-image: url("/images/studies/bg_01.jpg");
+            background-image: url("../images/studies/bg_01.jpg");
         }
 
         &:nth-child(2) {
-            background-image: url("/images/studies/bg_02.jpg");
+            background-image: url("../images/studies/bg_02.jpg");
         }
 
         &:nth-child(3) {
-            background-image: url("/images/studies/bg_03.jpg");
+            background-image: url("../images/studies/bg_03.jpg");
         }
 
         &:nth-child(4) {
-            background-image: url("/images/studies/bg_04.jpg");
+            background-image: url("../images/studies/bg_04.jpg");
         }
     }
 }

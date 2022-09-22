@@ -16,14 +16,14 @@ a {
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto-Regular.woff2") format("woff2"), url("/fonts/Roboto-Regular.woff") format("woff");
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/Inter-Regular.woff2") format("woff2"), url("/fonts/Inter-Regular.woff") format("woff");
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -144,7 +144,7 @@ body {
   height: 12px;
   top: 19px;
   right: 17px;
-  background: url("/images/header/icon_arrow.svg");
+  background: url("../images/header/icon_arrow.svg");
   background-repeat: no-repeat;
 }
 .header__main__copyright {
@@ -154,6 +154,7 @@ body {
   color: #485B60;
 }
 .header__main__bg {
+  display: flex;
   background-color: #ECE8D9;
 }
 
@@ -203,7 +204,7 @@ body {
   height: 256px;
   top: 0;
   right: 0;
-  background-image: url("/images/create/icon_sun.svg");
+  background-image: url("../images/create/icon_sun.svg");
   background-position-x: right;
   background-repeat: no-repeat;
 }
@@ -243,7 +244,7 @@ body {
   height: 10px;
   top: 7px;
   right: 7px;
-  background-image: url("/images/create/icon_arrow.svg");
+  background-image: url("../images/create/icon_arrow.svg");
   background-repeat: no-repeat;
 }
 
@@ -283,7 +284,7 @@ body {
   height: 10px;
   top: 16px;
   right: 16px;
-  background-image: url("/images/create/icon_arrow.svg");
+  background-image: url("../images/create/icon_arrow.svg");
   background-repeat: no-repeat;
 }
 .studies__items {
@@ -328,16 +329,16 @@ body {
   margin-bottom: 44px;
 }
 .studies__item:nth-child(1) {
-  background-image: url("/images/studies/bg_01.jpg");
+  background-image: url("../images/studies/bg_01.jpg");
 }
 .studies__item:nth-child(2) {
-  background-image: url("/images/studies/bg_02.jpg");
+  background-image: url("../images/studies/bg_02.jpg");
 }
 .studies__item:nth-child(3) {
-  background-image: url("/images/studies/bg_03.jpg");
+  background-image: url("../images/studies/bg_03.jpg");
 }
 .studies__item:nth-child(4) {
-  background-image: url("/images/studies/bg_04.jpg");
+  background-image: url("../images/studies/bg_04.jpg");
 }
 
 .skills {
@@ -350,6 +351,7 @@ body {
   letter-spacing: 1.2px;
   color: #102226;
   margin-bottom: 41px;
+  width: 400px;
 }
 .skills__item {
   padding-top: 40px;
@@ -431,7 +433,7 @@ body {
   height: 10px;
   top: 25%;
   right: -21px;
-  background-image: url("/images/awards/icon_arrow.svg");
+  background-image: url("../images/awards/icon_arrow.svg");
   background-repeat: no-repeat;
 }
 .awards__subitem {
@@ -542,7 +544,7 @@ body {
   height: 12px;
   top: 16px;
   right: 15px;
-  background: url("/images/header/icon_arrow.svg");
+  background: url("../images/header/icon_arrow.svg");
   background-repeat: no-repeat;
 }
 
@@ -584,7 +586,7 @@ body {
   height: 10px;
   top: 16px;
   right: 16px;
-  background-image: url("/images/create/icon_arrow.svg");
+  background-image: url("../images/create/icon_arrow.svg");
   background-repeat: no-repeat;
 }
 .blog__items {
@@ -632,7 +634,7 @@ body {
   right: -21px;
   width: 10px;
   height: 10px;
-  background-image: url("/images/blog/icon_arrow.svg");
+  background-image: url("../images/blog/icon_arrow.svg");
   background-repeat: no-repeat;
 }
 
