@@ -33,21 +33,21 @@ body {
 }
 
 .container {
-  width: 1280px;
+  max-width: 1280px;
   margin-right: auto;
   margin-left: auto;
 }
 
 .create .container {
-  width: 920px;
+  max-width: 920px;
 }
 
 .studies .container, .quality .container, .footer__top .container {
-  width: 1060px;
+  max-width: 1060px;
 }
 
 .skills .container {
-  width: 620px;
+  max-width: 620px;
 }
 
 .header__top {
@@ -606,7 +606,10 @@ body {
   justify-content: space-between;
 }
 .awards__item {
-  width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 290px;
   padding: 41px 41px 45px 41px;
   border: 1px solid #DDE3E4;
 }
@@ -762,8 +765,8 @@ body {
   position: absolute;
   content: "";
   top: -210px;
-  right: -309px;
-  width: 558px;
+  right: -100px;
+  width: 329px;
   height: 492px;
   background-image: url("../images/banner/banner_sun.png");
   background-repeat: no-repeat;
@@ -884,6 +887,8 @@ body {
   gap: 40px;
 }
 .blog__item {
+  display: flex;
+  flex-direction: column;
   width: 400px;
   padding: 0 25px 5px 25px;
   border: 1px solid #DDE3E4;

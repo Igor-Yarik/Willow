@@ -3,25 +3,25 @@ body {
 }
 
 .container {
-    width:calc(1440px - 160px);
+    max-width:calc(1440px - 160px);
     margin-right: auto;
     margin-left: auto;
 }
 
 .create {
     .container {
-        width:calc(1440px - 520px);
+        max-width:calc(1440px - 520px);
     }
 }
 
 .studies, .quality, .footer__top {
     .container {
-        width:calc(1440px - 380px);
+        max-width:calc(1440px - 380px);
     }
 }
 
 .skills {
     .container {
-        width:calc(1440px - 820px);
+        max-width:calc(1440px - 820px);
     }
 }

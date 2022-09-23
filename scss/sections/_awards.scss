@@ -30,7 +30,10 @@
     }
 
     &__item {
-        width: 290px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 290px;
         padding: 41px 41px 45px 41px;
         border: 1px solid #DDE3E4;
 
@@ -84,4 +87,9 @@
         border-top: 1px solid #DDE3E4;
         border-bottom: 1px solid #DDE3E4;
     }
+}
+
+
+@media (max-width: 1220px) {
+    
 }
