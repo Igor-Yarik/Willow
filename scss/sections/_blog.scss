@@ -4,14 +4,15 @@
 
     &__head {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        gap: 312px;
         margin-bottom: 124px;
+
     }
 
     &__title {
         position: relative;
-        margin-left: 125px;
         font-weight: 400;
         font-size: 48px;
         line-height: 56px;
@@ -34,7 +35,6 @@
 
     &__link {
         position: relative;
-        margin-right: 125px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;

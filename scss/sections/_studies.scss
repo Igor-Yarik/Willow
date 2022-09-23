@@ -1,5 +1,5 @@
 .studies {
-    margin-top: 200px;
+    margin-top: 198px;
 
     &__head {
         display: flex;
@@ -74,8 +74,8 @@
         justify-content: flex-end;
         width: 510px;
         height: 648px;
-        padding-left: 40px;        
-
+        padding-left: 40px; 
+       
         &__title {
             font-weight: 400;
             font-size: 32px;
@@ -97,16 +97,30 @@
         }
 
         &__link {
+            width: 100px;
+            position: relative;
             font-weight: 400;
             font-size: 14px;
             line-height: 24px;
             letter-spacing: 0.28px;            
             color: #ECE8D9;
-            margin-bottom: 44px;            
+            margin-bottom: 44px;
+           
+            
+            &::after {
+                position: absolute;
+                content: '';
+                top: 8px;
+                right: 0;
+                width: 10px;    
+                height: 10px;   
+                background-image: url("../images/studies/icon_arrow.svg");
+                background-repeat: no-repeat;
+            }
         }
 
         &:nth-child(1) {
-            background-image: url("../images/studies/bg_01.jpg");
+            background-image: url("../images/studies/bg_01.jpg");            
         }
 
         &:nth-child(2) {
