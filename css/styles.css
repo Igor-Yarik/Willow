@@ -765,11 +765,12 @@ body {
   position: absolute;
   content: "";
   top: -210px;
-  right: -100px;
+  right: -80px;
   width: 329px;
   height: 492px;
   background-image: url("../images/banner/banner_sun.png");
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .banner__item {
   display: flex;
